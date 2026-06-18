@@ -4,8 +4,6 @@
 
 <h1 align="center">DockAutoHide</h1>
 
-# DockAutoHide
-
 A tiny macOS menu bar utility that keeps your Dock out of the way. It appears only when you're actually looking at the desktop, and disappears the instant any app has a window on screen.
 
 ## What it Does
