@@ -4,9 +4,7 @@
 
 <h1 align="center">DockAutoHide</h1>
 
-A tiny macOS menu bar utility that keeps your Dock out of the way. It appears only when you're actually looking at the desktop, and disappears the instant any app has a window on screen.
-
---
+A tiny macOS menu bar utility that keeps your Dock out of the way. It appears only when you're actually looking at an empty desktop, and disappears the instant any app has a window on screen.
 
 ## What it Does
 | Desktop visible, no window from any app on screen | Shown |
@@ -24,9 +22,9 @@ It works by activating the system shortcut **⌥⌘D** (Command+Option+D), the s
 - Menu bar only, no Dock icon, no clutter
 - Detects every app switch and every Space/desktop swipe in real time
 - Detects the true desktop state system-wide rather than just checking Finder, so it correctly handles minimizing any app's last window, tiled/split-screen layouts, trackpad gesture minimizing, and so on
-- Self-correcting: instead of trusting its own memory of "is the Dock shown," it reads the live `com.apple.dock autohide` value before acting, so it can't quietly drift out of sync
-- A lightweight repeating safety check as a backstop, plus a check anchored to the exact moment of each Space change, so there's never a long window where it's silently wrong
-- Launch at Login toggle built right into the menu, no detour through System Settings
+- Self-correcting: instead of trusting its own memory of "is the Dock shown?" it reads the live `com.apple.dock autohide` value before acting, so it can't quietly drift out of sync
+- A lightweight, repeating safety check as a backstop, plus a check anchored to the exact moment of each Space change, so there's never a long window where it's silently wrong
+- "Launch at Login" toggle built right into the menu, no detour through System Settings
 - Standard macOS About panel
 - On quit, it explicitly turns Dock auto-hide back off and restarts the Dock, so closing the app visibly hands control back to you
 

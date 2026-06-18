@@ -88,7 +88,7 @@ import ServiceManagement
         paragraphStyle.alignment = .center
         
         // 2. Create the string with an extra newline (\n\n) for spacing
-        let creditsText = "Built by Abdullah Khairaddin\n\nHides the Dock when apps are on screen and it reappears on an empty desktop ."
+        let creditsText = "Copyright (C) 2026 Abdullah Khairaddin\n\nHides the Dock when apps are on screen and it reappears on an empty desktop ."
         
         // 3. Apply the paragraph style to the attributed string
         let attributedCredits = NSAttributedString(
