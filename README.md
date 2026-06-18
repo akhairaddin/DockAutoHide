@@ -72,12 +72,4 @@ The core logic lives in `DockWatcher.swift`:
 
 ## Known limitations
 
-- Relies on `CGWindowListCopyWindowInfo`, which Apple has signaled may eventually need to move to `SCShareableContent` on a future macOS version.
-- Every fresh Xcode archive/export needs Accessibility re-granted, since it's technically a new build.
-- No light/dark variant wired up for the app icon yet. Xcode's "Appearances" option was greyed out on this icon set. Not essential, just left for later.
-
----
-
-Built step by step, bug by bug, swipe by swipe.
-
-
+- Relies on `CGWindowListCopyWindowInfo`, which Apple has signaled may eventually need to move to `SCShareableContent` on a future macOS version, will push new code when that does happen.
