@@ -52,8 +52,8 @@
 			children = (
 				B834635D2FE3D866008B6B98 /* DockAutoHide */,
 				B83463572FE3D6DA008B6B98 /* LICENSE */,
-				B83463692FE3DD5F008B6B98 /* README.md */,
 				B83463682FE3DBE0008B6B98 /* DockAutoHide.app */,
+				B83463692FE3DD5F008B6B98 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
