@@ -53,7 +53,18 @@ import Sparkle
                     action: #selector(SPUStandardUpdaterController.checkForUpdates(_:)),
                     keyEquivalent: ""
                 )
-                updateMenuItem.target = updaterController
+        
+        // Safety check to ensure we have a controller
+                if let controller = self.updaterController {
+                    updateMenuItem.target = controller
+                    updateMenuItem.isEnabled = true
+                } else {
+                    // If it's nil, we initialize it right here as a fallback
+                    self.updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
+                    updateMenuItem.target = self.updaterController
+                    updateMenuItem.isEnabled = true
+                }
+                
                 menu.addItem(updateMenuItem)
                 // ---
 

@@ -35,7 +35,16 @@ It works by activating the system shortcut **⌥⌘D** (Command+Option+D), the s
 - **About DockAutoHide**: The standard macOS about panel
 - **Quit**: Also resets `autohide` to off and restarts the Dock, so quitting visibly restores normal behavior
 
+##Unsigned App Warning
+Since I don't want to pay Apple $100 a year just for the pleasure of having my simple app "signed and notarized", You will get a pop-up saying ""DockAutoHide" Not Opened".
+1. Click "Done" on the pop up
+2. Go to System Settings> Privacy and Security and scroll all the way down
+3.You'll see "DockAutoHide was blocked to protect your mac", click "Open Anyway" 
+4.Click "Open Anyway" on the pop-up
+5.Enjoy!
+
 ## Requirements
+
 
 - macOS 13 (Ventura) or later
 - **Accessibility permission**: required because the app sends a synthetic ⌥⌘D keystroke via `CGEvent`. Grant under **System Settings → Privacy & Security → Accessibility**.
