@@ -8,7 +8,7 @@
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/akhairaddin/DockAutoHide/releases/download/1.0/DockAutoHide.1.0.zip" length="1248470" type="application/octet-stream" sparkle:edSignature="zYAiplcyCV5FRtAfznnxDlSdDKDdxLwhpANnGRmy0Io"/>
+            <enclosure url="https://github.com/akhairaddin/DockAutoHide/releases/download/1.0/DockAutoHide.1.0.zip" length="1249213" type="application/octet-stream" sparkle:edSignature="baUJ+yOrrBahddpkF5BCquLvtR0kZLkCzmC5T2DgNZRPZc8MeS4zy150ouIaPRPX1sCj9M5q1fCOdDKQxMlwAA=="/>
         </item>
     </channel>
 </rss>

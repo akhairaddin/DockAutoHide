@@ -23,7 +23,7 @@
 	<key>SUPublicEDKey</key>
 	<string>zYAiplcyCV5FRtAfznnxDlSdDKDdxLwhpANnGRmy0Io</string>
 	<key>SUFeedURL</key>
-	<string>zYAiplcyCV5FRtAfznnxDlSdDKDdxLwhpANnGRmy0Io</string>
+	<string>https://akhairaddin.github.io/DockAutoHide/appcast.xml</string>
 	<key>LSUIElement</key>
 	<true/>
 </dict>
