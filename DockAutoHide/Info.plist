@@ -2,29 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppleEventsUsageDescription</key>
-	<string>DockAutoHide needs AppleScript access to restore Dock settings on quit.</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.AK.DockAutoHide</string>
-	<key>CFBundleName</key>
-	<string>DockAutoHide</string>
-	<key>CFBundleDisplayName</key>
-	<string>DockAutoHide</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
-	<key>CFBundleExecutable</key>
-	<string>DockAutoHide</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>13.0</string>
-	<key>SUPublicEDKey</key>
-	<string>zYAiplcyCV5FRtAfznnxDlSdDKDdxLwhpANnGRmy0Io</string>
 	<key>SUFeedURL</key>
 	<string>https://akhairaddin.github.io/DockAutoHide/appcast.xml</string>
-	<key>LSUIElement</key>
-	<true/>
+	<key>SUPublicEDKey</key>
+	<string>zYAiplcyCV5FRtAfznnxDlSdDKDdxLwhpANnGRmy0Io</string>
 </dict>
 </plist>
