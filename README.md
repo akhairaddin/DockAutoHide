@@ -42,7 +42,8 @@ Since I don't want to pay Apple $100 a year just for the pleasure of having my s
 2. Go to System Settings> Privacy and Security and scroll all the way down
 3. You'll see "DockAutoHide was blocked to protect your mac", click "Open Anyway" 
 4. Click "Open Anyway" on the pop-up
-5. Enjoy!
+5. Confirm with fingerprint/Password
+6. Done! Enjoy.
 
 ## Requirements
 
