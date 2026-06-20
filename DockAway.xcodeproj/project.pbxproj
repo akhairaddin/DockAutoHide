@@ -13,13 +13,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B83463682FE3DBE0008B6B98 /* DockAutoHide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockAutoHide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83463682FE3DBE0008B6B98 /* DockAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DockAway.app; path = "/Users/abdullah/Documents/Xcode Apps/DockAutoHide/DockAutoHide/build/Debug/DockAway.app"; sourceTree = "<absolute>"; };
 		B85DD2722FE3E52C00DB642C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B85DD2742FE3E53800DB642C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B83463642FE3D9EC008B6B98 /* Exceptions for "DockAutoHide" folder in "DockAutoHide" target */ = {
+		B83463642FE3D9EC008B6B98 /* Exceptions for "DockAway" folder in "DockAway" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppDelegate.swift,
@@ -27,17 +27,17 @@
 				Dockwatcher.swift,
 				main.swift,
 			);
-			target = B8DCC9352FDE8291000500D4 /* DockAutoHide */;
+			target = B8DCC9352FDE8291000500D4 /* DockAway */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B834635D2FE3D866008B6B98 /* DockAutoHide */ = {
+		B834635D2FE3D866008B6B98 /* DockAway */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				B83463642FE3D9EC008B6B98 /* Exceptions for "DockAutoHide" folder in "DockAutoHide" target */,
+				B83463642FE3D9EC008B6B98 /* Exceptions for "DockAway" folder in "DockAway" target */,
 			);
-			path = DockAutoHide;
+			path = DockAway;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -57,8 +57,7 @@
 		B8DCC92D2FDE8291000500D4 = {
 			isa = PBXGroup;
 			children = (
-				B834635D2FE3D866008B6B98 /* DockAutoHide */,
-				B83463682FE3DBE0008B6B98 /* DockAutoHide.app */,
+				B834635D2FE3D866008B6B98 /* DockAway */,
 				B85DD2722FE3E52C00DB642C /* LICENSE */,
 				B85DD2742FE3E53800DB642C /* README.md */,
 			);
@@ -67,9 +66,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8DCC9352FDE8291000500D4 /* DockAutoHide */ = {
+		B8DCC9352FDE8291000500D4 /* DockAway */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8DCC9412FDE8291000500D4 /* Build configuration list for PBXNativeTarget "DockAutoHide" */;
+			buildConfigurationList = B8DCC9412FDE8291000500D4 /* Build configuration list for PBXNativeTarget "DockAway" */;
 			buildPhases = (
 				B8DCC9322FDE8291000500D4 /* Sources */,
 				B8DCC9332FDE8291000500D4 /* Frameworks */,
@@ -79,12 +78,12 @@
 			);
 			dependencies = (
 			);
-			name = DockAutoHide;
+			name = DockAway;
 			packageProductDependencies = (
 				B85DD2802FE650DB00DB642C /* Sparkle */,
 			);
 			productName = DockAutoHide;
-			productReference = B83463682FE3DBE0008B6B98 /* DockAutoHide.app */;
+			productReference = B83463682FE3DBE0008B6B98 /* DockAway.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B8DCC9312FDE8291000500D4 /* Build configuration list for PBXProject "DockAutoHide" */;
+			buildConfigurationList = B8DCC9312FDE8291000500D4 /* Build configuration list for PBXProject "DockAway" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -120,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8DCC9352FDE8291000500D4 /* DockAutoHide */,
+				B8DCC9352FDE8291000500D4 /* DockAway */,
 			);
 		};
 /* End PBXProject section */
@@ -352,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B8DCC9312FDE8291000500D4 /* Build configuration list for PBXProject "DockAutoHide" */ = {
+		B8DCC9312FDE8291000500D4 /* Build configuration list for PBXProject "DockAway" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8DCC93F2FDE8291000500D4 /* Debug */,
@@ -361,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8DCC9412FDE8291000500D4 /* Build configuration list for PBXNativeTarget "DockAutoHide" */ = {
+		B8DCC9412FDE8291000500D4 /* Build configuration list for PBXNativeTarget "DockAway" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8DCC9422FDE8291000500D4 /* Debug */,

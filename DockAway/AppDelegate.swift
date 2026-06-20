@@ -68,7 +68,7 @@ import Sparkle
                 menu.addItem(updateMenuItem)
                 // ---
 
-        menu.addItem(NSMenuItem(title: "About DockAutoHide", action: #selector(showAbout), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "About DockAway", action: #selector(showAbout), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "q"))
 
         statusItem.menu = menu
@@ -124,7 +124,7 @@ import Sparkle
         
         // 4. Pass the updated attributed string to the options panel
         NSApp.orderFrontStandardAboutPanel(options: [
-            NSApplication.AboutPanelOptionKey.applicationName: "DockAutoHide",
+            NSApplication.AboutPanelOptionKey.applicationName: "DockAway",
             NSApplication.AboutPanelOptionKey.version: "1.0",
             NSApplication.AboutPanelOptionKey.credits: attributedCredits
         ])
@@ -132,7 +132,7 @@ import Sparkle
 
     // MARK: - First Launch
 
-    private func ensureDockAutoHideIsOn() {
+    private func ensureDockAwayIsOn() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             let defaults = UserDefaults(suiteName: "com.apple.dock")
             let isAlreadyOn = defaults?.bool(forKey: "autohide") ?? false
@@ -151,7 +151,7 @@ import Sparkle
         UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             let alert = NSAlert()
-            alert.messageText = "Welcome to DockAutoHide 👋"
+            alert.messageText = "Welcome to DockAway 👋"
             alert.informativeText = "Your Dock will now automatically appear when you are on an empty desktop and hides when an app occupies the screen.\n\n• Toggle Launch at Login from the menu bar.\n• The app runs silently and efficiently in the background.\n\nEnjoy your Extra Real Estate!"
             alert.alertStyle = .informational
             alert.addButton(withTitle: "Awesome!")
@@ -164,7 +164,7 @@ import Sparkle
     private func requestAccessibilityPermission() {
         if AXIsProcessTrusted() {
             dockWatcher = DockWatcher()
-            ensureDockAutoHideIsOn()
+            ensureDockAwayIsOn()
             dockWatcher.start()
             showWelcomeIfNeeded()
         } else {
@@ -174,7 +174,7 @@ import Sparkle
             alert.messageText = "But First ☝️"
             
             // 2. Put both the subtitle and body in the informative text to bypass the layout gap
-            alert.informativeText = "Accessibility Permission is Required:\nDockAutoHide is requesting accessibility permission from system settings in order to detect desktop app occupancy status."
+            alert.informativeText = "Accessibility Permission is Required:\nDockAway is requesting accessibility permission from system settings in order to detect desktop app occupancy status."
             alert.alertStyle = .informational
             
             // Buttons populate right-to-left
@@ -240,7 +240,7 @@ import Sparkle
             if AXIsProcessTrusted() {
                 print("✅ Accessibility granted — starting detector")
                 self.dockWatcher = DockWatcher()
-                self.ensureDockAutoHideIsOn()
+                self.ensureDockAwayIsOn()
                 self.dockWatcher.start()
                 self.showWelcomeIfNeeded()
             } else {
