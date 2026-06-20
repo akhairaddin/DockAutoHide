@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>DockAutoHide</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Sat, 20 Jun 2026 01:31:47 -0400</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/akhairaddin/DockAutoHide/releases/download/1.0/DockAutoHide.1.0.zip" length="1248470" type="application/octet-stream" sparkle:edSignature="zYAiplcyCV5FRtAfznnxDlSdDKDdxLwhpANnGRmy0Io"/>
+        </item>
+    </channel>
+</rss>

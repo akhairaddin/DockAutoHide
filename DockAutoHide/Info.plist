@@ -20,6 +20,10 @@
 	<string>APPL</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>13.0</string>
+	<key>SUPublicEDKey</key>
+	<string>zYAiplcyCV5FRtAfznnxDlSdDKDdxLwhpANnGRmy0Io</string>
+	<key>SUFeedURL</key>
+	<string>zYAiplcyCV5FRtAfznnxDlSdDKDdxLwhpANnGRmy0Io</string>
 	<key>LSUIElement</key>
 	<true/>
 </dict>

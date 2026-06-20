@@ -1,14 +1,19 @@
 import Cocoa
 import ServiceManagement
+import Sparkle
 
 @objc class AppDelegate: NSObject, NSApplicationDelegate {
     var isQuitting = false
     private var statusItem: NSStatusItem!
     private var dockWatcher: DockWatcher!
+    private var updaterController: SPUStandardUpdaterController!
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         print("🚀 APP LAUNCHED")
         NSApp.setActivationPolicy(.accessory)
+        
+        //Initialize Sparkle
+        updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
         setupMenuBar()
         requestAccessibilityPermission()
     }
@@ -41,6 +46,16 @@ import ServiceManagement
         launchAtLogin.state = isLaunchAtLoginEnabled() ? .on : .off
         menu.addItem(launchAtLogin)
         menu.addItem(.separator())
+        
+        // --- SPARKLE UPDATE MENU ITEM  ---
+                let updateMenuItem = NSMenuItem(
+                    title: "Check for Updates...",
+                    action: #selector(SPUStandardUpdaterController.checkForUpdates(_:)),
+                    keyEquivalent: ""
+                )
+                updateMenuItem.target = updaterController
+                menu.addItem(updateMenuItem)
+                // ---
 
         menu.addItem(NSMenuItem(title: "About DockAutoHide", action: #selector(showAbout), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "q"))
