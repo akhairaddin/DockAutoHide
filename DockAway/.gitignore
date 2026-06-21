@@ -1,0 +1,10 @@
+# Build artifacts
+dist/
+build/
+
+# Sparkle cache and local build files
+*.xcuserstate
+.DS_Store
+
+# Other junk
+*.swp
