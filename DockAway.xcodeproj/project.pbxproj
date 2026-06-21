@@ -16,6 +16,7 @@
 		B81444F02FE736ED004F03A3 /* DockAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockAway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85DD2722FE3E52C00DB642C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B85DD2742FE3E53800DB642C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B8F2A77D2FE7C0F100F51F73 /* appcast.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = appcast.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -60,6 +61,7 @@
 			children = (
 				B834635D2FE3D866008B6B98 /* DockAway */,
 				B85DD2722FE3E52C00DB642C /* LICENSE */,
+				B8F2A77D2FE7C0F100F51F73 /* appcast.xml */,
 				B85DD2742FE3E53800DB642C /* README.md */,
 				B81444F02FE736ED004F03A3 /* DockAway.app */,
 			);
