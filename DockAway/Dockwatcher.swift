@@ -24,7 +24,7 @@ final class DockWatcher {
             object: nil
         )
 
-        // Safety net — also catches cases where NO notification fires at all,
+        // Safety net: Catches cases where NO notification fires at all,
         // e.g. minimizing the last window of an app via a trackpad gesture.
         safetyTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { [weak self] _ in
             guard let self else { return }
@@ -49,7 +49,7 @@ final class DockWatcher {
             guard let self else { return }
             self.evaluateFrontmostApp(quiet: false)
             // Re-check shortly after in case the window list hadn't fully
-            // settled on the first pass yet — anchored to this exact swipe
+            // settled on the first pass yet, anchored to this exact swipe
             // rather than the independent safety timer, so the worst case
             // is always the same fixed delay instead of depending on timer
             // phase luck. No-ops instantly if the first check was correct.
@@ -83,7 +83,7 @@ final class DockWatcher {
     }
 
     /// Shows the Dock only when NO standard window from ANY app is visible
-    /// on the current screen — i.e. the true desktop. Checking system-wide
+    /// on the current screen,  i.e. the true desktop. Checking system-wide
     /// (rather than just the reported "frontmost" app) is what correctly
     /// handles cases like two tiled apps where minimizing one still leaves
     /// the other covering the screen.
@@ -165,7 +165,7 @@ final class DockWatcher {
         keyDown.post(tap: .cgSessionEventTap)
         keyUp.post(tap: .cgSessionEventTap)
 
-        print("  ⌨️ Sent ⌥⌘D")
+        print("  ⌨️ Sent ⌘⌥D")
     }
 
     private func setDockVisible(_ shouldShow: Bool) {

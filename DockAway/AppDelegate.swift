@@ -66,8 +66,8 @@ import Sparkle
                 }
                 
                 menu.addItem(updateMenuItem)
-                // ---
 
+        
         menu.addItem(NSMenuItem(title: "About DockAway", action: #selector(showAbout), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "q"))
 
